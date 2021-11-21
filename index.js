@@ -5,6 +5,7 @@ const cors = require('cors');
 
 require('dotenv').config();
 
+const port = process.env.PORT || 4000;
 const app = express();
 
 app.use(cors());
@@ -35,6 +36,8 @@ app.get('/user', async (req, res) => {
 	return res.status(200).json({ username, message: 'Authorized successfully' });
 });
 
-app.listen(4000, () => {
+// Dodaj port w .env
+
+app.listen(port, () => {
 	console.log('Example app listening at http://localhost:4000');
 });
