@@ -36,8 +36,6 @@ app.get('/user', async (req, res) => {
 	return res.status(200).json({ username, message: 'Authorized successfully' });
 });
 
-// Dodaj port w .env
-
 app.listen(port, () => {
-	console.log('Example app listening at http://localhost:4000');
+	console.log('Example app listening');
 });
