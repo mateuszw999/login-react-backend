@@ -37,5 +37,5 @@ app.get('/user', async (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log('Example app listening');
+	console.log('app listening');
 });
